@@ -6,6 +6,8 @@
 
 #include "comp_units/kernel_select.cuh"
 
+#include "compat_gemm.cuh"
+
 void gemm_half_q_half_cuda_part
 (
     const half* a,
