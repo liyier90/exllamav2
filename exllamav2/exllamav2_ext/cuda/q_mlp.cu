@@ -9,6 +9,7 @@
 #include "../config.h"
 
 #include "q_mlp_softmax.cuh"
+#include "compat_gemm.cuh"
 
 #if defined(USE_ROCM)
 __device__ __forceinline__ __half2 __compat_h2rcp(__half2 x) {
